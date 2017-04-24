@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Side Menu</string>
+    <string name="one">Chambre</string>
+    <string name="two">Suite</string>
+    <string name="tree">Villa</string>
+    <string name="four">Restauration</string>
+    <string name="five">Home</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="title_activity_hebegement">HebegementActivity</string>
+    <string name="section_format">Vue partielle sur l’océan</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string-array name="destinations">
+
+        <item>Restauration</item>
+        <item>SPA</item>
+        <item>GOLF</item>
+        <item>Shopping</item>
+        <item>Baby Club</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+    <string-array name="picture">
+
+        <item>http://o-www.mazaganbeachresort.com/content/images/2904.jpg</item>
+        <item>http://o-www.mazaganbeachresort.com/content/images/2904.jpg</item>
+        <item>http://o-www.mazaganbeachresort.com/content/images/2904.jpg</item>
+        <item>http://o-www.mazaganbeachresort.com/content/images/2904.jpg</item>
+        <item>http://o-www.mazaganbeachresort.com/content/images/2904.jpg</item>
+    </string-array>
+</resources>

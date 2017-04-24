@@ -1,0 +1,6 @@
+<resources>
+
+    <!-- Base application theme. -->
+<style name="Theme.ImageGallery" parent="Base.Theme.ImageGallery" />
+    <color name="text">#be8639</color>
+</resources>
