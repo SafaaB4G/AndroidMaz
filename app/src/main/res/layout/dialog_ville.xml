@@ -1,0 +1,354 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/dialogEx"
+                android:text="Excursions"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="#be8639"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+                android:layout_below="@+id/dialogEx"
+                android:textColor="#000000"
+                android:textSize="12dp"
+                android:layout_marginLeft="15dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/contentEx"/>
+            <View
+
+                android:id="@+id/viewEx"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/contentEx"
+                android:layout_marginTop="20dp"
+                android:background="#33334c" />
+
+            <TextView
+                android:id="@+id/dialogS"
+                android:text="Sport et loisirs"
+                android:layout_below="@id/viewEx"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="#be8639"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+                android:layout_below="@+id/dialogS"
+                android:textColor="#000000"
+                android:textSize="12dp"
+                android:layout_marginLeft="15dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/contentS"/>
+            <View
+
+                android:id="@+id/viewS"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/contentS"
+                android:layout_marginTop="20dp"
+                android:background="#33334c" />
+
+
+
+            <TextView
+                android:id="@+id/dialogtitle"
+                android:text="El jadida"
+                android:layout_below="@+id/viewS"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="#22427C"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+
+
+
+            <TextView
+                android:layout_below="@+id/dialogtitle"
+                android:textColor="#000000"
+                android:textSize="12dp"
+                android:layout_marginLeft="15dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/content"/>
+            <View
+
+                android:id="@+id/view2"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/content"
+                android:layout_marginTop="20dp"
+                android:background="#33334c" />
+
+
+            //the segond item
+            <TextView
+                android:layout_below="@+id/view2"
+                android:text="Azemmour"
+                android:id="@+id/dialog"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="#22427C"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:layout_below="@+id/dialog"
+                android:textColor="#000000"
+                android:textSize="12dp"
+                android:layout_marginLeft="15dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/cont"/>
+            <View
+
+                android:id="@+id/view3"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/cont"
+                android:layout_marginTop="20dp"
+                android:background="#33334c" />
+            ///villa
+
+            <TextView
+                android:layout_below="@+id/view3"
+                android:text="Oualidia"
+                android:id="@+id/dialog1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="#22427C"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:layout_below="@+id/dialog1"
+                android:textColor="#000000"
+                android:textSize="12dp"
+                android:layout_marginLeft="15dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/cont1"/>
+
+
+            <View
+
+                android:id="@+id/view5"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/cont1"
+                android:layout_marginTop="20dp"
+                android:background="#33334c" />
+
+            //ville item
+
+            <TextView
+                android:layout_below="@+id/view5"
+                android:text="Casablanca"
+                android:id="@+id/dialog2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="#22427C"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:layout_below="@+id/dialog2"
+                android:textColor="#000000"
+                android:textSize="12dp"
+                android:layout_marginLeft="15dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/cont2"/>
+
+
+            <View
+
+                android:id="@+id/view6"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/cont2"
+                android:layout_marginTop="20dp"
+                android:background="#33334c" />
+
+            <TextView
+                android:layout_below="@+id/view6"
+                android:text="Marrakech"
+                android:id="@+id/dialog3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="#22427C"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:layout_below="@+id/dialog3"
+                android:textColor="#000000"
+                android:textSize="12dp"
+                android:layout_marginLeft="15dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/cont3"/>
+
+
+            <View
+
+                android:id="@+id/view7"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/cont3"
+                android:layout_marginTop="20dp"
+                android:background="#33334c" />
+
+            <TextView
+                android:layout_below="@+id/view7"
+                android:text="Rabat"
+                android:id="@+id/dialog4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="#22427C"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:layout_below="@+id/dialog4"
+                android:textColor="#000000"
+                android:textSize="12dp"
+                android:layout_marginLeft="15dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/cont4"/>
+
+
+            <View
+
+                android:id="@+id/view8"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/cont4"
+                android:layout_marginTop="20dp"
+                android:background="#33334c" />
+
+
+
+            <LinearLayout
+                android:layout_below="@+id/view8"
+
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/dialogyes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginBottom="2dp"
+
+                    android:gravity="center"
+                    android:text="ok"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+
+
+
+
+                    android:textColor="#22427C" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

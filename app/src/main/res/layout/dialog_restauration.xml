@@ -47,8 +47,607 @@
                 android:layout_marginTop="20dp"
                 android:background="#33334c" />
 
-            <LinearLayout
+
+
+            ///item of restauration
+
+            <TextView
                 android:layout_below="@+id/view2"
+                android:text="Market Place "
+
+                android:id="@+id/dialog2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="#22427C"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:layout_below="@+id/dialog2"
+                android:textColor="#000000"
+                android:textSize="12dp"
+                android:layout_marginLeft="15dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/cont2"/>
+
+
+            <View
+
+                android:id="@+id/view6"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/cont2"
+                android:layout_marginTop="20dp"
+                android:background="#33334c" />
+            <TextView
+                android:layout_below="@+id/view6"
+
+                android:text="Morjana "
+
+                android:id="@+id/dialog3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="#22427C"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:layout_below="@+id/dialog3"
+                android:textColor="#000000"
+                android:textSize="12dp"
+                android:layout_marginLeft="15dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/cont3"/>
+
+
+            <View
+
+                android:id="@+id/view7"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/cont3"
+                android:layout_marginTop="20dp"
+                android:background="#33334c" />
+            <TextView
+                android:layout_below="@+id/view7"
+                android:text="Jin-Ja "
+                android:id="@+id/dialog4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="#22427C"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:layout_below="@+id/dialog4"
+                android:textColor="#000000"
+                android:textSize="12dp"
+                android:layout_marginLeft="15dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/cont4"/>
+
+
+            <View
+
+                android:id="@+id/view8"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/cont4"
+                android:layout_marginTop="20dp"
+                android:background="#33334c" />
+            <TextView
+                android:layout_below="@+id/view8"
+                android:text="Al Firma "
+                android:id="@+id/dialog5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="#22427C"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_below="@+id/dialog5"
+                android:textColor="#000000"
+                android:textSize="12dp"
+                android:layout_marginLeft="15dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/cont6"/>
+
+
+            <View
+
+                android:id="@+id/view9"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/cont6"
+                android:layout_marginTop="20dp"
+                android:background="#33334c" />
+            <TextView
+                android:layout_below="@+id/view9"
+                android:text="Sel de Mer "
+                android:id="@+id/dialog6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="#22427C"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:layout_below="@+id/dialog6"
+                android:textColor="#000000"
+                android:textSize="12dp"
+                android:layout_marginLeft="15dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/cont7"/>
+
+
+            <View
+
+                android:id="@+id/view10"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/cont7"
+                android:layout_marginTop="20dp"
+                android:background="#33334c" />
+            <TextView
+                android:layout_below="@+id/view10"
+                android:text="La Cave"
+                android:id="@+id/dialog7"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="#22427C"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:layout_below="@+id/dialog7"
+                android:textColor="#000000"
+                android:textSize="12dp"
+                android:layout_marginLeft="15dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/cont8"/>
+
+
+            <View
+
+                android:id="@+id/view11"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/cont8"
+                android:layout_marginTop="20dp"
+                android:background="#33334c" />
+            <TextView
+                android:layout_below="@+id/view11"
+                android:text="Chiringuito "
+                android:id="@+id/dialog8"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="#22427C"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:layout_below="@+id/dialog8"
+                android:textColor="#000000"
+                android:textSize="12dp"
+                android:layout_marginLeft="15dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/cont9"/>
+
+
+            <View
+
+                android:id="@+id/view12"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/cont9"
+                android:layout_marginTop="20dp"
+                android:background="#33334c" />
+            <TextView
+                android:layout_below="@+id/view12"
+                android:text="Beach Barbecue "
+                android:id="@+id/dialog9"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="#22427C"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:layout_below="@+id/dialog9"
+                android:textColor="#000000"
+                android:textSize="12dp"
+                android:layout_marginLeft="15dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/cont13"/>
+
+
+            <View
+
+                android:id="@+id/view13"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/cont13"
+                android:layout_marginTop="20dp"
+                android:background="#33334c" />
+            <TextView
+                android:layout_below="@+id/view13"
+                android:text="Pizzeria "
+                android:id="@+id/dialog10"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="#22427C"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:layout_below="@+id/dialog10"
+                android:textColor="#000000"
+                android:textSize="12dp"
+                android:layout_marginLeft="15dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/cont14"/>
+
+
+            <View
+
+                android:id="@+id/view14"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/cont14"
+                android:layout_marginTop="20dp"
+                android:background="#33334c" />
+            <TextView
+                android:layout_below="@+id/view14"
+                android:text="Club House "
+                android:id="@+id/dialog11"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="#22427C"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:layout_below="@+id/dialog11"
+                android:textColor="#000000"
+                android:textSize="12dp"
+                android:layout_marginLeft="15dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/cont15"/>
+
+
+            <View
+
+                android:id="@+id/view15"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/cont15"
+                android:layout_marginTop="20dp"
+                android:background="#33334c" />
+            <TextView
+                android:layout_below="@+id/view15"
+                android:text="Oasis "
+                android:id="@+id/dialog12"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="#22427C"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:layout_below="@+id/dialog12"
+                android:textColor="#000000"
+                android:textSize="12dp"
+                android:layout_marginLeft="15dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/cont16"/>
+
+
+            <View
+
+                android:id="@+id/view16"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/cont16"
+                android:layout_marginTop="20dp"
+                android:background="#33334c" />
+            <TextView
+                android:layout_below="@+id/view16"
+                android:text="Tutti Frutti "
+                android:id="@+id/dialog13"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="#22427C"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:layout_below="@+id/dialog13"
+                android:textColor="#000000"
+                android:textSize="12dp"
+                android:layout_marginLeft="15dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/cont17"/>
+
+
+            <View
+
+                android:id="@+id/view17"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/cont17"
+                android:layout_marginTop="20dp"
+                android:background="#33334c" />
+            <TextView
+                android:layout_below="@+id/view17"
+                android:text="Jockey Club "
+                android:id="@+id/dialog14"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="#22427C"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:layout_below="@+id/dialog14"
+                android:textColor="#000000"
+                android:textSize="12dp"
+                android:layout_marginLeft="15dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/cont18"/>
+
+
+            <View
+
+                android:id="@+id/view18"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/cont18"
+                android:layout_marginTop="20dp"
+                android:background="#33334c" />
+
+            <TextView
+                android:layout_below="@+id/view18"
+                android:text="Atrium "
+                android:id="@+id/dialog15"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="#22427C"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:layout_below="@+id/dialog15"
+                android:textColor="#000000"
+                android:textSize="12dp"
+                android:layout_marginLeft="15dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/cont19"/>
+
+
+            <View
+
+                android:id="@+id/view19"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/cont19"
+                android:layout_marginTop="20dp"
+                android:background="#33334c" />
+            <TextView
+                android:layout_below="@+id/view19"
+                android:text="Alias "
+                android:id="@+id/dialog16"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="#22427C"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:layout_below="@+id/dialog16"
+                android:textColor="#000000"
+                android:textSize="12dp"
+                android:layout_marginLeft="15dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/cont20"/>
+
+
+            <View
+
+                android:id="@+id/view20"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/cont20"
+                android:layout_marginTop="20dp"
+                android:background="#33334c" />
+            <TextView
+                android:layout_below="@+id/view20"
+                android:text="Olives "
+                android:id="@+id/dialog17"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="#22427C"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:layout_below="@+id/dialog17"
+                android:textColor="#000000"
+                android:textSize="12dp"
+                android:layout_marginLeft="15dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/cont21"/>
+
+
+            <View
+
+                android:id="@+id/view21"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/cont21"
+                android:layout_marginTop="20dp"
+                android:background="#33334c" />
+
+            <LinearLayout
+                android:layout_below="@+id/view21"
 
                 android:layout_width="fill_parent"
                 android:layout_height="40dp"

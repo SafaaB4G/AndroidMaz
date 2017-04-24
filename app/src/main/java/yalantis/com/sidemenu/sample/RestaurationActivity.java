@@ -31,7 +31,9 @@ import java.util.List;
 
 import io.codetail.animation.SupportAnimator;
 import io.codetail.animation.ViewAnimationUtils;
+import tools.CallWebService;
 import tools.MenuPrincipale;
+import tools.Menus;
 import yalantis.com.sidemenu.interfaces.Resourceble;
 import yalantis.com.sidemenu.interfaces.ScreenShotable;
 import yalantis.com.sidemenu.model.SlideMenuItem;
@@ -57,6 +59,22 @@ public class RestaurationActivity extends AppCompatActivity implements ViewAnima
     private ViewPager viewPager;
     TextView textView;
     TextView textView1;
+    TextView textView2;
+    TextView textView3;
+    TextView textView4;
+    TextView textView5;
+    TextView textView6;
+    TextView textView7;
+    TextView textView8;
+    TextView textView9;
+    TextView textView10;
+    TextView textView11;
+    TextView textView12;
+    TextView textView13;
+    TextView textView14;
+    TextView textView15;
+    TextView textView16;
+    TextView textView17;
 
     FloatingActionButton button1;
     FragmentManager fm = getSupportFragmentManager();
@@ -118,58 +136,153 @@ public class RestaurationActivity extends AppCompatActivity implements ViewAnima
 
         Log.d("My Button",""+button1);
 
-        button1.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View arg0) {
-                final ArrayList<MenuPrincipale> l = new ArrayList<MenuPrincipale>(CallMazaganWebServicePincipale("Restauration"));
+        if (button1 != null ) {
+            button1.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    final ArrayList<MenuPrincipale> l = new ArrayList<MenuPrincipale>(CallMazaganWebServicePincipale("Restauration"));
+
+                    final ArrayList<Menus>lS =new ArrayList<Menus>( CallWebService.CallMazaganWebSousMenu("MarketPlace"));
+                    final ArrayList<Menus>l1 =new ArrayList<Menus>( CallWebService.CallMazaganWebSousMenu("Morjana"));
+
+                    final ArrayList<Menus>l2 =new ArrayList<Menus>( CallWebService.CallMazaganWebSousMenu("Jin-Ja"));
+
+                    final ArrayList<Menus>l3 =new ArrayList<Menus>( CallWebService.CallMazaganWebSousMenu("AlFirma"));
+
+                    final ArrayList<Menus>l4 =new ArrayList<Menus>( CallWebService.CallMazaganWebSousMenu("SeldeMer"));
+
+                    final ArrayList<Menus>l5 =new ArrayList<Menus>( CallWebService.CallMazaganWebSousMenu("LaCave"));
+
+                    final ArrayList<Menus>l6 =new ArrayList<Menus>( CallWebService.CallMazaganWebSousMenu("Chiringuito"));
+
+                    final ArrayList<Menus>l7 =new ArrayList<Menus>( CallWebService.CallMazaganWebSousMenu("BeachBarbecue"));
+
+                    final ArrayList<Menus>l8 =new ArrayList<Menus>( CallWebService.CallMazaganWebSousMenu("Pizzeria"));
+
+                    final ArrayList<Menus>l9 =new ArrayList<Menus>( CallWebService.CallMazaganWebSousMenu("ClubHouse"));
+
+                    final ArrayList<Menus>l10 =new ArrayList<Menus>( CallWebService.CallMazaganWebSousMenu("Oasis"));
+
+                    final ArrayList<Menus>l11 =new ArrayList<Menus>( CallWebService.CallMazaganWebSousMenu("TuttiFrutti"));
+
+                    final ArrayList<Menus>l12 =new ArrayList<Menus>( CallWebService.CallMazaganWebSousMenu("JockeyClub"));
+
+                    final ArrayList<Menus>l13 =new ArrayList<Menus>( CallWebService.CallMazaganWebSousMenu("Atrium"));
+
+                    final ArrayList<Menus>l14 =new ArrayList<Menus>( CallWebService.CallMazaganWebSousMenu("Alias"));
+
+                    final ArrayList<Menus>l15 =new ArrayList<Menus>( CallWebService.CallMazaganWebSousMenu("Olives"));
 
 
 
-                Log.d("list", "" + l.get(0).getDescription());
 
 
-                final Dialog mDialog;
-                mDialog = new Dialog(RestaurationActivity.this);
-                mDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-                mDialog.setContentView(R.layout.dialog_restauration);
-                textView = (TextView) mDialog.findViewById(R.id.content);
-
-                textView1 = (TextView) mDialog.findViewById(R.id.dialogtitle);
+                    Log.d("list", "" + l.get(0).getDescription());
 
 
+                    final Dialog mDialog;
+                    mDialog = new Dialog(RestaurationActivity.this);
+                    mDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+                    mDialog.setContentView(R.layout.dialog_restauration);
+                    textView = (TextView) mDialog.findViewById(R.id.content);
 
-                TextView ok = (TextView) mDialog.findViewById(R.id.dialogyes);
-                Log.d("ok", "fjv" + ok);
-                textView1.setText("Restauration");
-                textView.setText("" + l.get(0).getDescription());
+                    textView1 = (TextView) mDialog.findViewById(R.id.dialogtitle);
 
-                ok.setOnClickListener(new View.OnClickListener() {
+                    //item restauration
 
-                    @Override
-                    public void onClick(View v) {
+                    textView2 = (TextView) mDialog.findViewById(R.id.cont2);
 
+                    textView3 = (TextView) mDialog.findViewById(R.id.cont3);
+                    textView4 = (TextView) mDialog.findViewById(R.id.cont4);
 
-                        mDialog.cancel();
+                    textView5 = (TextView) mDialog.findViewById(R.id.cont6);
+                    textView6= (TextView) mDialog.findViewById(R.id.cont7);
 
-                    }
-                });
-                ok.setOnClickListener(new View.OnClickListener() {
+                    textView7 = (TextView) mDialog.findViewById(R.id.cont8);
+                    textView8= (TextView) mDialog.findViewById(R.id.cont9);
 
-                    @Override
-                    public void onClick(View v) {
-                        //Log.println(Log.ASSERT, "My logoooo","tichaaaa");
+                    textView9 = (TextView) mDialog.findViewById(R.id.cont13);
+                    textView10 = (TextView) mDialog.findViewById(R.id.cont14);
 
+                    textView11 = (TextView) mDialog.findViewById(R.id.cont15);
+                    textView12 = (TextView) mDialog.findViewById(R.id.cont16);
 
+                    textView13 = (TextView) mDialog.findViewById(R.id.cont17);
+                    textView14 = (TextView) mDialog.findViewById(R.id.cont18);
 
-                        mDialog.dismiss();
-                    }
-                });
-                mDialog.show();
+                    textView15 = (TextView) mDialog.findViewById(R.id.cont19);
+                    textView16 = (TextView) mDialog.findViewById(R.id.cont20);
 
-            }
-        });
+                    textView17 = (TextView) mDialog.findViewById(R.id.cont21);
 
 
-    }
+
+
+                    TextView ok = (TextView) mDialog.findViewById(R.id.dialogyes);
+                    Log.d("ok", "fjv" + ok);
+                    textView1.setText("Restauration");
+                    textView.setText(l.get(0).getDescription());
+
+
+                    //item restauration
+
+
+                    textView2.setText(lS.get(0).getDescription());
+
+                    textView3.setText(l1.get(0).getDescription());
+                    textView4.setText(l2.get(0).getDescription());
+                    textView5.setText(l3.get(0).getDescription());
+                    textView6.setText(l4.get(0).getDescription());
+
+                    textView7.setText(l5.get(0).getDescription());
+                    textView8.setText(l6.get(0).getDescription());
+
+                    textView9.setText(l7.get(0).getDescription());
+                    textView10.setText(l8.get(0).getDescription());
+
+                    textView11.setText(l9.get(0).getDescription());
+                    textView12.setText(l10.get(0).getDescription());
+
+                    textView13.setText(l11.get(0).getDescription());
+                    textView14.setText(l12.get(0).getDescription());
+
+                    textView15.setText(l13.get(0).getDescription());
+                    textView16.setText(l14.get(0).getDescription());
+
+                    textView17.setText(l15.get(0).getDescription());
+
+
+
+
+                    ok.setOnClickListener(new View.OnClickListener() {
+
+                        @Override
+                        public void onClick(View v) {
+
+
+                            mDialog.cancel();
+
+                        }
+                    });
+                    ok.setOnClickListener(new View.OnClickListener() {
+
+                        @Override
+                        public void onClick(View v) {
+                            //Log.println(Log.ASSERT, "My logoooo","tichaaaa");
+
+
+                            mDialog.dismiss();
+                        }
+                    });
+                    mDialog.show();
+
+                }
+            });
+
+
+        }}
+
+
+
     //create the menu
     private void createMenuList() {
         SlideMenuItem menuItem0 = new SlideMenuItem(ContentFragment.CLOSE, R.drawable.icn_close);

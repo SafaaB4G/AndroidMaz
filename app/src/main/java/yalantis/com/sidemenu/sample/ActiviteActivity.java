@@ -1,5 +1,6 @@
 package yalantis.com.sidemenu.sample;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.graphics.Color;
@@ -21,9 +22,11 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
 import android.view.animation.AccelerateInterpolator;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -31,6 +34,8 @@ import java.util.List;
 
 import io.codetail.animation.SupportAnimator;
 import io.codetail.animation.ViewAnimationUtils;
+import tools.CallWebService;
+import tools.Menus;
 import yalantis.com.sidemenu.interfaces.Resourceble;
 import yalantis.com.sidemenu.interfaces.ScreenShotable;
 import yalantis.com.sidemenu.model.SlideMenuItem;
@@ -52,13 +57,20 @@ public class ActiviteActivity extends AppCompatActivity implements ViewAnimator.
     private Toolbar toolbar;
     private TabLayout tabLayout;
     private ViewPager viewPager;
+    TextView textView2;
+    TextView textView3;
+    TextView textView4;
+    TextView textView5;
+    TextView textView6;
+    TextView textView7;
+    TextView textViewEx;
+    TextView textViews;
 
     FloatingActionButton button1;
     FragmentManager fm = getSupportFragmentManager();
 
 
     @Override
-
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
@@ -111,11 +123,103 @@ public class ActiviteActivity extends AppCompatActivity implements ViewAnimator.
 
         button1.setOnClickListener(new View.OnClickListener(){
             public void onClick(View arg0) {
+                DFragment dFragment = new DFragment();
 
-                Toast.makeText(getApplicationContext(),"No data  " + ("\ud83d\ude05"),Toast.LENGTH_LONG).show();
-
-                            }
+                dFragment.show(fm,"  show dialod");
+            }
         });
+
+
+        if (button1 != null ) {
+            button1.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+
+                    final ArrayList<Menus>lEx =new ArrayList<Menus>( CallWebService.CallMazaganWebSousMenu("Excursions"));
+
+                    final ArrayList<Menus>lS =new ArrayList<Menus>( CallWebService.CallMazaganWebSousMenu("SPORTLOISIRS"));
+
+
+                    final ArrayList<Menus>l =new ArrayList<Menus>( CallWebService.CallMazaganWebSousMenu("ElJadida"));
+
+                    final ArrayList<Menus>l1 =new ArrayList<Menus>( CallWebService.CallMazaganWebSousMenu("Azemmour"));
+
+
+                    final ArrayList<Menus>l2 =new ArrayList<Menus>( CallWebService.CallMazaganWebSousMenu("Casablanca"));
+
+                    final ArrayList<Menus>l3 =new ArrayList<Menus>( CallWebService.CallMazaganWebSousMenu("Marrakech"));
+
+                    final ArrayList<Menus>l4 =new ArrayList<Menus>( CallWebService.CallMazaganWebSousMenu("Rabat"));
+
+                    final ArrayList<Menus>l5 =new ArrayList<Menus>( CallWebService.CallMazaganWebSousMenu("Oualidia"));
+
+
+                    Log.d("list",""+l.get(0).getDescription());
+
+
+                    final Dialog mDialog;
+                    mDialog = new Dialog(ActiviteActivity.this);
+                    mDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+                    mDialog.setContentView(R.layout.dialog_ville);
+                    textViewEx = (TextView) mDialog.findViewById(R.id.contentEx);
+                    textViews = (TextView) mDialog.findViewById(R.id.contentS);
+
+                    textView2 = (TextView) mDialog.findViewById(R.id.content);
+                    textView3 = (TextView) mDialog.findViewById(R.id.cont);
+
+                    textView4 = (TextView) mDialog.findViewById(R.id.cont2);
+                    textView5 = (TextView) mDialog.findViewById(R.id.cont3);
+
+                    textView6 = (TextView) mDialog.findViewById(R.id.cont4);
+                    textView7 = (TextView) mDialog.findViewById(R.id.cont1);
+
+
+
+
+
+                    TextView ok = (TextView) mDialog.findViewById(R.id.dialogyes);
+                    Log.d("ok","fjv"+ok);
+
+                    textViewEx.setText(""+lEx.get(0).getDescription());
+                    textViews.setText(""+lS.get(0).getDescription());
+
+
+                    textView2.setText(""+l.get(0).getDescription());
+                    textView3.setText(""+l1.get(0).getDescription());
+
+                    textView4.setText(""+l2.get(0).getDescription());
+                    textView5.setText(""+l3.get(0).getDescription());
+                    textView6.setText(""+l4.get(0).getDescription());
+                    textView7.setText(""+l5.get(0).getDescription());
+
+
+                    ok.setOnClickListener(new View.OnClickListener() {
+
+                        @Override
+                        public void onClick(View v) {
+
+
+                            mDialog.cancel();
+
+                        }
+                    });
+                    ok.setOnClickListener(new View.OnClickListener() {
+
+                        @Override
+                        public void onClick(View v) {
+                            //Log.println(Log.ASSERT, "My logoooo","tichaaaa");
+
+
+
+                            mDialog.dismiss();
+                        }
+                    });
+                    mDialog.show();
+
+                }
+            });
+
+
+        }
 
 
 
